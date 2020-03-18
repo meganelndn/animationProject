@@ -2,7 +2,7 @@ import {
     gallery
 } from "./modules/gallery"
 
-document.querySelector("h1").textContent = "Fooled you bitches!";
+/* document.querySelector("h1").textContent = "Yo mom";
 
 const data = [{
         i: "1.png"
@@ -12,4 +12,10 @@ const data = [{
     }
 ];
 
-gallery(data, document.body);
+gallery(data, document.body); */
+
+$(function () {
+    $(".power").click(function () {
+        $("body").toggleClass("active");
+    });
+});
