@@ -2,7 +2,7 @@ import {
     gallery
 } from "./modules/gallery"
 
-document.querySelector("h1").textContent = "Fooled you bitches!";
+document.querySelector("h1").textContent = "Let's test this bulb";
 
 const data = [{
         i: "1.png"
