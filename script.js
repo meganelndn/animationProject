@@ -1,8 +1,7 @@
+/*-------------------IMPORT IMAGES------------------*/
 import {
     gallery
 } from "./modules/gallery"
-
-document.querySelector("h1").textContent = "Let's test this bulb";
 
 const data = [{
         i: "1.png"
@@ -11,5 +10,4 @@ const data = [{
         i: "2.png"
     }
 ];
-
 gallery(data, document.body);
