@@ -1,5 +1,5 @@
 /*-------------------IMPORT IMAGES------------------*/
-import {
+/* import {
     gallery
 } from "./modules/gallery"
 
@@ -10,4 +10,4 @@ const data = [{
         i: "2.png"
     }
 ];
-gallery(data, document.body);
+gallery(data, document.body); */
