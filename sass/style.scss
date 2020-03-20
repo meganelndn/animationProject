@@ -4,6 +4,13 @@
 body {
     background-color: vars.$bg-color;
 
+    img {
+        transform: scaleY(-1);
+        width: auto;
+        height: auto;
+        display: block;
+    }
+
     h1 {
         color: vars.$h1-color;
         @include mixins.flexible();
@@ -14,8 +21,4 @@ body {
 
         ;
     }
-}
-
-img {
-    @include mixins.defaultBorder();
 }

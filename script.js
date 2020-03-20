@@ -8,13 +8,17 @@ import {
 } from "./modules/gallery"
 
 const data = [{
-    i: "bulbWhite.svg"
-}];
+        i: "bulbWhite.svg"
+    },
+    {
+        i: "SimpleTimeline.svg"
+    }
+];
 gallery(data, document.body);
 
-/*-------------------INITIALISING------------------*/
+/*-------------------INITIALISING: Fetch svg's------------------*/
 async function init() {
-    const response = await fetch("static/imgs/timeline.svg");
+    const response = await fetch("static/imgs/");
     const svgData = await response.text();
     document.querySelector("body").innerHTML = svgData;
     startManipulatingTheSvg();
