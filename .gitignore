@@ -1,3 +1,9 @@
 .cache/
 dist/
 node_modules/
+static/imgs/radio.ai
+static/imgs/telephone.ai
+static/imgs/telephone_1.ai
+static/imgs/telephoneWhite.ai
+static/imgs/timeline.ai
+static/imgs/tv.ai
