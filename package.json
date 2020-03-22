@@ -5,7 +5,8 @@
   "main": "script.js",
   "scripts": {
     "start": "parcel *.html --open",
-    "build": "parcel build *.html --public-url ./"
+    "build": "parcel build *.html --public-url ./",
+    "timeline": "timeline.html --open"
   },
   "repository": {
     "type": "git",
