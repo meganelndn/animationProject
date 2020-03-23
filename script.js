@@ -4,14 +4,14 @@ require("@babel/polyfill");
 window.addEventListener("DOMContentLoaded", init);
 
 /*-------------------IMPORT IMAGES------------------*/
-import {
+/* import {
     gallery
 } from "./modules/gallery"
 
 const data = [{
     i: "bulbWhite.svg"
 }];
-gallery(data, document.body);
+gallery(data, document.body); */
 
 /*--------------INITIALISING: Fetch svg's-------------*/
 async function init() {

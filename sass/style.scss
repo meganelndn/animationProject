@@ -15,7 +15,3 @@ body {
         ;
     }
 }
-
-img {
-    @include mixins.defaultBorder();
-}
