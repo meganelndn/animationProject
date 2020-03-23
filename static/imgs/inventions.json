@@ -1,0 +1,44 @@
+[
+  {
+    "title": "invention 1",
+    "id": "point0",
+    "inventor": "Chris Columbus",
+    "text": "blabla bla something about invention 1 here",
+    "poster": "sorcerer.jpg"
+  },
+  {
+    "title": "invention 2",
+    "id": "point1",
+    "inventor": "Chris Columbus",
+    "text": "blabla bla something about invention 2 here",
+    "poster": "chamber.jpg"
+  },
+  {
+    "title": "invention 3",
+    "id": "point2",
+    "inventor": "Alfonso Cuarón",
+    "text": "blabla bla something about invention 3 here",
+    "poster": "azkaban.jpg"
+  },
+  {
+    "title": "invention 4",
+    "id": "point3",
+    "inventor": "Mike Newell",
+    "text": "blabla bla something about invention 4 here",
+    "poster": "goblet.jpg"
+  },
+  {
+    "title": "invention 5",
+    "id": "point4",
+    "inventor": "David Yates",
+    "text": "blabla bla something about invention 5 here",
+    "poster": "phoenix.jpg"
+  },
+  {
+    "title": "invention 6",
+    "id": "point5",
+    "inventor": "David Yates",
+    "text": "blabla bla something about invention 6 here",
+    "poster": "half-blood.jpg"
+  }
+]
