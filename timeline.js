@@ -1,10 +1,10 @@
 require("@babel/polyfill");
 "use strict"
 
-document.addEventListener("DOMContentLoaded", start);
+window.addEventListener("DOMContentLoaded", start);
 //to fix error when fetching svg using async
 
-async function start(){
+async function start() {
     console.log("test")
     //timeline
     let response = await fetch("imgs/timeline.svg");
@@ -16,10 +16,10 @@ async function start(){
     document.querySelector("#infoBoxSvg").innerHTML = infoSvg;
     //load json
     startManipulatingData();
- 
+
 }
 
-function startManipulatingData(){
+function startManipulatingData() {
     console.log("testando")
     console.log()
 }
