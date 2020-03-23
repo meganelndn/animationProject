@@ -1,3 +1,4 @@
+require("@babel/polyfill");
 "use strict";
 
 document.querySelector("DOMContentLoaded", init);
@@ -10,9 +11,9 @@ import {
 const data = [{
         i: "bulbWhite.svg"
     },
-    {
+    /* {
         i: "SimpleTimeline.svg"
-    }
+    } */
 ];
 gallery(data, document.body);
 
@@ -23,7 +24,7 @@ async function init() {
     let svgData = await response.text();
     document.querySelector("section").innerHTML = svgData;
     //timeline
-    const responseTimeline = await fetch("imgs/SimpleTimeline.svg");
+    /* const responseTimeline = await fetch("imgs/SimpleTimeline.svg");
     const mainSvg = await responseTimeline.text();
-    document.querySelector("body").innerHTML = mainSvg;
+    document.querySelector("body").innerHTML = mainSvg; */
 }

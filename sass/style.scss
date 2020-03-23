@@ -2,14 +2,14 @@
 @use "partials/mixins";
 
 body {
-    background-color: vars.$bg-color;
+    //background-color: vars.$bg-color;
 
-    img {
+    /* img {
         transform: scaleY(-1);
         width: auto;
         height: auto;
         display: block;
-    }
+    } */
 
     section {
         background-color: white;
@@ -30,6 +30,7 @@ body {
 .cls-1,
 .outline {
     stroke: #fff;
+    fill: #fff;
     stroke-dasharray: 200;
     stroke-dashoffset: 250;
     animation: dash 2s linear alternate forwards;
