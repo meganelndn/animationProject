@@ -3,6 +3,11 @@ require("@babel/polyfill");
 
 window.addEventListener("DOMContentLoaded", init);
 
+/*--------------------IMPORT GSAP------------------*/
+import {
+    gsap
+} from "gsap";
+
 /*-------------------IMPORT IMAGES------------------*/
 /* import {
     gallery
