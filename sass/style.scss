@@ -11,6 +11,10 @@ body {
         display: block;
     }
 
+    section {
+        background-color: white;
+    }
+
     h1 {
         color: vars.$h1-color;
         @include mixins.flexible();
@@ -20,5 +24,19 @@ body {
         }
 
         ;
+    }
+}
+
+.cls-1,
+.outline {
+    stroke: #fff;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 250;
+    animation: dash 2s linear alternate forwards;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
     }
 }
