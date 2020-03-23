@@ -16,14 +16,14 @@ const data = [{
 ];
 gallery(data, document.body);
 
-/*-------------------INITIALISING: Fetch svg's------------------*/
+/*--------------INITIALISING: Fetch svg's-------------*/
 async function init() {
-    const response = await fetch("static/imgs/");
-    const svgData = await response.text();
-    document.querySelector("body").innerHTML = svgData;
-    startManipulatingTheSvg();
-}
-
-function startManipulatingTheSvg() {
-
+    //bulb
+    const response = await fetch("imgs/bulbWhite.svg");
+    let svgData = await response.text();
+    document.querySelector("section").innerHTML = svgData;
+    //timeline
+    const responseTimeline = await fetch("imgs/SimpleTimeline.svg");
+    const mainSvg = await responseTimeline.text();
+    document.querySelector("body").innerHTML = mainSvg;
 }
