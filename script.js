@@ -1,7 +1,7 @@
 require("@babel/polyfill");
 "use strict";
 
-document.querySelector("DOMContentLoaded", init);
+window.addEventListener("DOMContentLoaded", init);
 
 /*-------------------IMPORT IMAGES------------------*/
 import {
