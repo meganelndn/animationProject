@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", start);
 async function start(){
     console.log("test")
     //timeline
-    let response = await fetch("static/imgs/svg/timeline.svg");
+    let response = await fetch("imgs/timeline.svg");
     let mainSvg = await response.text();
     document.querySelector("#mainSvg").innerHTML = mainSvg;
     //infobox
-    let responseBox = await fetch("static/imgs/infobox.svg");
+    let responseBox = await fetch("imgs/infobox.svg");
     let infoSvg = await responseBox.text();
     document.querySelector("#infoBoxSvg").innerHTML = infoSvg;
     //load json
