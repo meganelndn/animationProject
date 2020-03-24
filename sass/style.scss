@@ -16,6 +16,23 @@ body {
     }
 }
 
-img {
-    @include mixins.defaultBorder();
+svg {
+    transform: scaleY(-1);
 }
+
+.cls-1,
+.outline {
+    stroke: white;
+    fill: transparent;
+}
+
+/*     stroke-dasharray: 200;
+    stroke-dashoffset: 250;
+    animation: dash 2s linear alternate forwards;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+} */

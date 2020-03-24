@@ -1,0 +1,142 @@
+$bg-color: #000;
+$font1: "Lovely Home";
+$font2: "Avenir";
+$font3: "Thundercover";
+$font4: "Sen";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: $bg-color;
+    font-family: $font1;
+    /* background: #000;
+  overflow-x: scroll;
+  overflow-y: hidden; */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+h1 {
+    color: blueviolet;
+
+    &:hover {
+        color: blue;
+        text-shadow: 2px 2px #000;
+    }
+}
+
+.logo {
+    text-align: center;
+    width: 65%;
+    height: 250px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 400px;
+    user-select: none;
+}
+
+.logo b {
+    font: 400 19vh $font3;
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
+        0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+
+.logo b span {
+    animation: blink linear infinite 2s;
+}
+
+.logo b span:nth-of-type(2) {
+    animation: blink linear infinite 3s;
+}
+
+@keyframes blink {
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    79% {
+        color: #333;
+    }
+
+    80% {
+        text-shadow: none;
+    }
+
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    82% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    92% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    92.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+}
+
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100vh;
+    display: flex;
+    /* overflow-x: scroll;
+  overflow-y: hidden; */
+    /* overscroll-behavior: auto contain;
+  scroll-behavior: smooth;
+  scroll-snap-align: center;
+  perspective: 2vw; */
+}
+
+#container .section {
+    position: relative;
+    min-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container .section .content {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.text h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+}
+
+.text p {
+    font-size: 1.1em;
+    color: #fff;
+}

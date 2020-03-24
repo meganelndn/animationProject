@@ -6,7 +6,8 @@
   "scripts": {
     "start": "parcel *.html --open",
     "build": "parcel build *.html --public-url ./",
-    "timeline": "parcel timeline.html --open"
+    "timeline": "parcel timeline.html --open",
+    "bulb": "parcel bulb.html --open"
   },
   "repository": {
     "type": "git",
