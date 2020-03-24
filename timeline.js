@@ -93,4 +93,27 @@ function selectCircle(selectedBullet) {
   date.textContent = invention.year;
   let imageObject = document.querySelector("#image")
   imageObject.setAttribute("href", `imgs/${invention.image} `);  
+  //change the position of the line:
+  const boxLine = document.querySelector("#timeline .cls-2");
+  //console.log(document.querySelector("#timeline .cls-2"))
+  const x1 = Math.floor(userChoice.getAttribute("cx"));
+  
+  console.log(userChoice)
+  console.log( Math.floor(userChoice.getAttribute("cy")))
+  const y1 = userChoice.getAttribute("cx");
+  const x2 = x1 -80;
+  const y2 = y1 - 105;
+  //boxLine.setAttribute("x1", x1);
+  //boxLine.setAttribute("y1", y1);
+  //boxLine.setAttribute("x2", x2);
+  //boxLine.setAttribute("y2", y2);
+
+  //find infobox to move it:
+  console.log(document.querySelector("#infobox rect"))
+  const moveInfoBox = document.querySelector("#mainSvg use");
+  moveInfoBox.setAttribute("x", x2);
+  //moveInfoBox.setAttribute("y", y2 + 180);
+  //infoSvg.x.baseVal.value = this.cx.baseVal.value / 5
+  //infoSvg.y.baseVal.value = -8
+
 }
