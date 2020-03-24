@@ -26,9 +26,8 @@ h1 {
   height: 100vh;
   stroke: white;
   fill: transparent;
-  z-index: 99;
 }
-.bulb {
+svg.bulb {
   width: 600px;
   height: 100vh;
   text-align: center;
@@ -110,7 +109,7 @@ svg#circuit {
   top: 0;
   display: flex;
   justify-content: center;
-  margin-top: 20%;
+
   margin-left: 50%;
   transform: translate(-50%, -50%);
   z-index: 99;
