@@ -19,3 +19,9 @@ body {
 img {
     @include mixins.defaultBorder();
 }
+
+
+//Timeline Box: hide the external svg
+.hiddenBox{
+    display: none;
+}

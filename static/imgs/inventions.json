@@ -1,44 +1,50 @@
 [
   {
     "title": "invention 1",
-    "id": "point0",
+    "id": "point1",
     "inventor": "Chris Columbus",
     "text": "blabla bla something about invention 1 here",
+    "date": "1089", 
     "poster": "sorcerer.jpg"
   },
   {
     "title": "invention 2",
-    "id": "point1",
+    "id": "point2",
     "inventor": "Chris Columbus",
     "text": "blabla bla something about invention 2 here",
+    "date": "1189", 
     "poster": "chamber.jpg"
   },
   {
     "title": "invention 3",
-    "id": "point2",
+    "id": "point3",
     "inventor": "Alfonso Cuarón",
     "text": "blabla bla something about invention 3 here",
+    "date": "1289", 
     "poster": "azkaban.jpg"
   },
   {
     "title": "invention 4",
-    "id": "point3",
+    "id": "point4",
     "inventor": "Mike Newell",
     "text": "blabla bla something about invention 4 here",
+    "date": "1389", 
     "poster": "goblet.jpg"
   },
   {
     "title": "invention 5",
-    "id": "point4",
+    "id": "point5",
     "inventor": "David Yates",
     "text": "blabla bla something about invention 5 here",
+    "date": "1489", 
     "poster": "phoenix.jpg"
   },
   {
     "title": "invention 6",
-    "id": "point5",
+    "id": "point6",
     "inventor": "David Yates",
     "text": "blabla bla something about invention 6 here",
+    "date": "1689", 
     "poster": "half-blood.jpg"
   }
 ]

@@ -52,6 +52,10 @@ function includeInfoBox() {
   addInfobox.setAttribute("height", "50");
   addInfobox.setAttribute("href", "#infobox");
   fullTimeline.appendChild(addInfobox);
+  
+  //hide the external Infobox
+  //fullTimeline.classList.add("hiddenBox");
+  document.querySelector("#infoBoxSvg").classList.add("hiddenBox")
   console.log();
 }
 
@@ -121,13 +125,9 @@ function buildCard(invention) {
   console.log(`user click ID ${identify}`);
   console.log(invention);
   console.log(`invention ID ${invention.id}`);
+  
 
-  const infobox = document.querySelector("#infobox");
-  console.log(infobox);
-  let inventor = document.querySelector(".cls-3");
-  inventor.textContent = invention.inventor;
-  let description = document.querySelector(".cls-5");
-  description.textContent = invention.text;
+  
 }
 
 /* -------------------------- onClick user bullet ------------------------------ */
@@ -136,8 +136,17 @@ function selectCircle(selectedBullet) {
   userChoice = selectedBullet.target;
   //user clicked bullet - with path to #id:
   identify = userChoice.id;
-  console.log(identify, allInventions);
+  console.log(identify);
   const invention = allInventions.find(inv => inv.id === identify);
-  //console.log(allInventions)
-  return identify;
+  console.log(allInventions.find(inv => inv.id === identify))
+  //return identify;
+  const infobox = document.querySelector("#infobox");
+  console.log(infobox);
+  let inventor = document.querySelector(".cls-3");
+  inventor.textContent = invention.inventor;
+  let description = document.querySelector(".cls-5");
+  description.textContent = invention.text;
+  let date = document.querySelector(".cls-6");
+  date.textContent = invention.date;
+ // fullTimeline.classList.remove("hiddenBox")    
 }
