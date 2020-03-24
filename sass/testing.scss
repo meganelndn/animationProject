@@ -3,10 +3,7 @@ $font1: "Lovely Home";
 $font2: "Avenir";
 $font3: "Thundercover";
 $font4: "Sen";
-* {
-  margin: 0;
-  padding: 0;
-}
+
 body {
   margin: 0;
   padding: 0;
@@ -35,7 +32,7 @@ h1 {
   text-align: center;
   padding: 10px;
   margin: 15px;
-  z-index: 1;
+  z-index: 99;
   position: absolute;
 }
 .logo {
@@ -114,7 +111,7 @@ svg#circuit {
   margin-top: 20%;
   margin-left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 99;
   opacity: 0.7;
 }
 
