@@ -132,7 +132,6 @@ function buildCard(invention) {
 
 /* -------------------------- onClick user bullet ------------------------------ */
 function selectCircle(selectedBullet) {
-  //console.log(selectedBullet)
   //user clicked bullet
   userChoice = selectedBullet.target;
   //console.log(userChoice)
