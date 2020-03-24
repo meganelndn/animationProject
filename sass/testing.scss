@@ -19,12 +19,14 @@ h1 {
     text-shadow: 2px 2px #000;
   }
 }
+
 .cls-1,
 .outline {
   width: 100vw;
   height: 100vh;
   stroke: white;
   fill: transparent;
+  z-index: 99;
 }
 .bulb {
   width: 600px;
