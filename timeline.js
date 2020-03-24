@@ -134,7 +134,6 @@ function buildCard(invention) {
 function selectCircle(selectedBullet) {
   //user clicked bullet
   userChoice = selectedBullet.target;
-  //console.log(userChoice)
   //console.log(userChoice.id)
   //user clicked bullet - with path to #id:
   identify = userChoice.id;
