@@ -4,10 +4,6 @@
 body {
     background-color: vars.$bg-color;
 
-    svg {
-        transform: scaleY(-1);
-    }
-
     h1 {
         color: vars.$h1-color;
         @include mixins.flexible();
@@ -18,6 +14,10 @@ body {
 
         ;
     }
+}
+
+svg {
+    transform: scaleY(-1);
 }
 
 .cls-1,

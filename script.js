@@ -3,12 +3,12 @@ require("@babel/polyfill");
 
 window.addEventListener("DOMContentLoaded", init);
 
-/*--------------------IMPORT GSAP------------------*/
+/*--------------------GSAP----------------------*/
 import {
     gsap
 } from "gsap";
 
-/*-------------------IMPORT IMAGES------------------*/
+/*---------------import images------------------*/
 /* import {
     gallery
 } from "./modules/gallery"
@@ -18,21 +18,27 @@ const data = [{
 }];
 gallery(data, document.body); */
 
-/*--------------INITIALISING: Fetch svg's-------------*/
+/*-------------- init function -----------------*/
 async function init() {
-    //bulb
-    const response = await fetch("imgs/bulbWhite.svg");
+    let response = await fetch("imgs/bulbWhite.svg");
+    let responseTl = await fetch("imgs/timeline.svg");
+    let responseBox = await fetch("imgs/infobox.svg");
+
     let svgData = await response.text();
     document.querySelector("#bulb").innerHTML = svgData;
+    let mainSvg = await responseTl.text();
+    document.querySelector("#mainSvg").innerHTML = mainSvg;
+    let infoSvg = await responseBox.text();
+    document.querySelector("#infoBoxSvg").innerHTML = infoSvg;
 
-    manipulateBulb();
+    startManipulatingSvg();
 }
 
-function manipulateBulb() {
+function startManipulatingSvg() {
     console.log("hi")
 }
 
-/*---------------GSAP Animation for BULB-------------*/
+/*--------------- bulb animation ---------------*/
 gsap.set("#bulb", {
     scale: 0.6,
     y: -140
