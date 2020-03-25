@@ -1,17 +1,21 @@
 html {
   height: 100%;
 }
+
 body {
   font-family: "Lovely Home", sans-serif;
 }
+
 #container {
   background: url(imgs/Bricks.jpg);
 }
+
 #timeline {
   width: 800px;
   height: 100vh;
   position: relative;
 }
+
 #mainSvg,
 #infoBoxSvg {
   width: 100%;
@@ -21,9 +25,11 @@ body {
   left: 0;
   z-index: 10;
 }
+
 #infoBoxSvg {
   z-index: 10;
 }
+
 /*
 .SVG {
   width: 1500px;

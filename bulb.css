@@ -1,0 +1,13 @@
+svg {
+    transform: scaleY(-1);
+}
+
+body {
+    background-color: #000;
+}
+
+.cls-1,
+.outline {
+    fill: transparent;
+    stroke: #fff;
+}

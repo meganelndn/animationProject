@@ -13,7 +13,7 @@ let identify;
 async function start() {
   console.log("test");
   //timeline
- let response = await fetch("imgs/finalmente_timeline.svg");
+  let response = await fetch("imgs/finalmente_timeline.svg");
   let mainSvg = await response.text();
   document.querySelector("#mainSvg").innerHTML = mainSvg;
   //infobox
@@ -35,7 +35,7 @@ function startManipulatingData() {
   document.querySelector("#infoBoxSvg #title").textContent = "Facts about eletricity";
   document.querySelector("#infoBoxSvg #inventor").textContent = "";
   document.querySelector("#infoBoxSvg #date").textContent = "";
-  document.querySelector("#infoBoxSvg #text").textContent = "Click on points from the timeline to view popular facts about eletricity";
+  document.querySelector("#infoBoxSvg #text").innerHTML = "Click on points from the timeline to \n view popular facts about eletricity";
   //show all bullets
   console.log(document.querySelector("#bullets"));
   //show clicked bullet
@@ -92,19 +92,19 @@ function selectCircle(selectedBullet) {
   let inventor = document.querySelector("#inventor");
   inventor.textContent = invention.inventor;
   let description = document.querySelector("#text");
-  description.innerHTML = invention.text;
+  description.textContent = invention.text;
   let title = document.querySelector("#title");
   title.textContent = invention.title;
   let date = document.querySelector("#date");
   date.textContent = invention.year;
   let imageObject = document.querySelector("#image")
-  imageObject.setAttribute("href", `imgs/${invention.image} `);  
+  imageObject.setAttribute("href", `imgs/${invention.image} `);
   //change the position of the line:
   const boxLine = document.querySelector("#timeline .cls-2");
   //console.log(document.querySelector("#timeline .cls-2"))
   const x1 = Math.floor(userChoice.getAttribute("cx"));
-    console.log(userChoice)
-  console.log( Math.floor(userChoice.getAttribute("cy")))
+  console.log(userChoice)
+  console.log(Math.floor(userChoice.getAttribute("cy")))
   const y1 = userChoice.getAttribute("cx");
   const x2 = x1;
   //const x2 = x1 + 50; -- will make it slightly down
