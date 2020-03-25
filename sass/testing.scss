@@ -58,6 +58,7 @@ svg.bulb {
 
 .hiddenBox {
   display: none;
+  background-color: white;
 }
 
 #mainSvg,
@@ -69,6 +70,7 @@ svg.bulb {
   left: 0;
   z-index: 9;
   padding: 50px;
+  fill: white;
 }
 
 #infoBoxSvg {
