@@ -2,16 +2,19 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Lovely Home", sans-serif;
   color: #fff;
 }
+
 .slide {
   display: flex;
   flex-direction: row;
   width: 400vw;
   height: 100vh;
 }
+
 .wrapper {
   background: url(imgs/Bricks.jpg);
   display: flex;
@@ -21,6 +24,7 @@ body {
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
+
 .one {
   display: flex;
   flex-direction: row;
@@ -38,9 +42,11 @@ body {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
+
 #timeline {
   padding: 20px;
   display: flex;
@@ -61,9 +67,11 @@ body {
   z-index: 9;
   padding: 20px;
 }
+
 #infoBoxSvg {
   z-index: 9;
 }
+
 .text {
   top: 0;
   left: 0;
