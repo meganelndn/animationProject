@@ -1,10 +1,16 @@
+@use "partials/vars";
+@use "partials/mixins";
+
 $bg-color: #000;
 $font1: "Lovely Home";
 $font2: "Avenir";
 $font3: "Thundercover";
 $font4: "Sen";
+$color-button: hsl(308, 100%, 50%);
 
 body {
+  max-width: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
   background: $bg-color;
@@ -14,7 +20,10 @@ body {
 }
 
 h1 {
-  color: blueviolet;
+  display: flex;
+  font-size: 1.7em;
+  color: #fff;
+  text-shadow: 1px 1px $color-button, 1px 1px 1px $color-button;
 
   &:hover {
     color: blue;
@@ -22,22 +31,72 @@ h1 {
   }
 }
 
-.cls-1,
+svg.bulb {
+  transform: scaleY(-1);
+}
+
+.bulb-stroke,
 .outline {
   width: 100vw;
   height: 100vh;
   stroke: white;
   fill: transparent;
+  z-index: 1;
 }
 
-.bulb {
-  width: 600px;
+#timeline {
+  padding: 40px;
+  display: flex;
+  align-items: flex-end;
+  width: 100vw;
   height: 100vh;
-  text-align: center;
-  padding: 10px;
-  margin: 15px;
-  z-index: 99;
+  position: relative;
+  margin-top: 250px;
+  margin-left: 200px;
+  margin-right: 40px;
+}
+
+.hiddenBox {
+  display: none;
+}
+
+#mainSvg,
+#infoBoxSvg {
+  width: 100%;
+  height: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  padding: 50px;
+}
+
+#infoBoxSvg {
+  z-index: 9;
+}
+
+#bullets ellipse {
+  rx: 30;
+  ry: 30;
+  fill: black;
+  stroke: #fff;
+}
+
+#timeline .cls-1 {
+  stroke: #fff;
+}
+
+.text {
+  top: 0;
+  left: 0;
+  max-width: 80%;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  color: #fff;
 }
 
 .logo {
@@ -108,7 +167,7 @@ h1 {
   }
 }
 
-/* -----------testing*/
+/* --------- circuit -------- */
 #circuits {
   position: relative;
   height: 0;
@@ -119,14 +178,12 @@ h1 {
 
 svg#circuit {
   position: absolute;
-  height: 100%;
-  width: 100%;
+
+  width: 80%;
   left: 0;
   top: 0;
   display: flex;
   justify-content: center;
-  margin-top: 20%;
-  margin-left: 50%;
   transform: translate(-50%, -50%);
   z-index: 99;
   opacity: 0.7;
@@ -150,4 +207,107 @@ svg#circuit {
     stroke-dashoffset: 0;
     stroke-opacity: 1;
   }
+}
+
+/*---------button------*/
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  min-width: 48px;
+  min-height: 36px;
+  background-color: $color-button;
+  color: hsl(0, 0%, 100%);
+  line-height: 1;
+  padding: 0.66em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  flex: none;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Button: Neon */
+.button.neon,
+button.neon,
+input[type="button"].neon,
+input[type="reset"].neon,
+input[type="submit"].neon {
+  border-radius: 0.4em;
+  font-weight: 400;
+  padding: 0.44em;
+  font-family: $font1, sans-serif;
+  letter-spacing: 0.04em;
+  background: transparent !important;
+  border: 0.1em solid lighten($color-button, 51%);
+  color: lighten($color-button, 51%);
+  text-shadow: hsl(0, 100%, 100%) 0px 0px 0.15em,
+    hsl(0, 100%, 100%) 0px 0px 0.3em, hsl(0, 100%, 100%) 0px 0px 0.45em,
+    $color-button 0px 0px 0.3em, $color-button 0px 0px 0.52em,
+    $color-button 0px 0px 0.6em, $color-button 0px 0px 0.75em;
+  box-shadow: hsl(0, 100%, 100%) 0px 0px 0.075em,
+    hsl(0, 100%, 100%) 0px 0px 0.15em, hsl(0, 100%, 100%) 0px 0px 0.22em,
+    $color-button 0px 0px 0.3em, $color-button 0px 0px 0.52em,
+    $color-button 0px 0px 0.6em, $color-button 0px 0px 0.75em,
+    inset $color-button 0 0 0.6em;
+}
+
+.button.neon:hover,
+button.neon:hover,
+input[type="button"].neon:hover,
+input[type="reset"].neon:hover,
+input[type="submit"].neon:hover {
+  text-shadow: hsl(0, 100%, 100%) 0px 0px 0.3em,
+    hsl(0, 100%, 100%) 0px 0px 0.6em, hsl(0, 100%, 100%) 0px 0px 0.9em,
+    $color-button 0px 0px 0.6em, $color-button 0px 0px 1.04em,
+    $color-button 0px 0px 1.2em, $color-button 0px 0px 1.5em;
+  box-shadow: hsl(0, 100%, 100%) 0px 0px 0.15em,
+    hsl(0, 100%, 100%) 0px 0px 0.3em, hsl(0, 100%, 100%) 0px 0px 0.44em,
+    $color-button 0px 0px 0.6em, $color-button 0px 0px 1.04em,
+    $color-button 0px 0px 1.2em, $color-button 0px 0px 1.5em,
+    inset $color-button 0 0 1.2em;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 1em;
+  position: sticky;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav ul li {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+#bulbWrapper {
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  margin-top: 100px;
 }
