@@ -46,12 +46,18 @@ async function init() {
 
 /* -------------------------- start ------------------------------ */
 function startManipulatingData() {
+    //change original size
+    document.querySelector("#mainSvg svg").setAttribute("viewBox", "0 0 2000 500");
+    document.querySelector("#mainSvg svg").setAttribute("height", "50%");
     //change what appears First:
     console.log(document.querySelector("#infoBoxSvg #inventor"))
-    document.querySelector("#infoBoxSvg #title").textContent = "Facts about eletricity";
+    document.querySelector("#infoBoxSvg #title").textContent = "Facts about electricity";
     document.querySelector("#infoBoxSvg #inventor").textContent = "";
     document.querySelector("#infoBoxSvg #date").textContent = "";
     document.querySelector("#infoBoxSvg #text").innerHTML = "<tspan>Click on points from the timeline to </tspan><tspan x='0' y='30'> view popular facts about electricity</tspan>";
+    document.querySelector("#infoBoxSvg #image").setAttribute("href", `imgs/bolt.svg`);
+    //hide line at the beggining:
+    document.querySelector("#timeline .cls-2").setAttribute("display", "none");
     //show all bullets
     console.log(document.querySelector("#bullets"));
     //show clicked bullet
@@ -99,6 +105,8 @@ function selectCircle(selectedBullet) {
     //user clicked bullet - with path to #id:
     identify = userChoice.id;
     console.log(identify);
+    //show box line:
+    document.querySelector("#timeline .cls-2").setAttribute("display", "block");
     //console.log(allInventions.replace("", "<br>"))
     const invention = allInventions.find(inv => inv.id === identify);
     console.log(allInventions.find(inv => inv.id === identify))
@@ -165,3 +173,4 @@ timeline.to("#bulb", {
         x: -975,
         scale: .1
     });
+    
