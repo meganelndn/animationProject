@@ -18,29 +18,24 @@ body {
   flex-direction: row;
   align-items: flex-end;
   width: 400vw;
+  height: 100vh;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
-.one {
-  display: flex;
-  flex-direction: row;
-  margin: 0px;
-}
 
 .outer-wrapper {
-  width: 100vh;
   height: 100vw;
+  width: 100vw;
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;
   overflow-y: scroll;
   overflow-x: hidden;
   position: absolute;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
 }
-::-webkit-scrollbar {
-  display: none;
-}
+/*display: flex;
+  flex-wrap: wrap;
+  align-items: center;*/
+
 #timeline {
   padding: 20px;
   display: flex;
@@ -48,7 +43,7 @@ body {
   width: 1200px;
   height: 100vh;
   position: relative;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 #mainSvg,
@@ -64,14 +59,33 @@ body {
 #infoBoxSvg {
   z-index: 9;
 }
-.text {
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 1em;
+  position: sticky;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+nav ul li {
+  display: flex;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+}
+.bulbWrapper {
   top: 0;
   left: 0;
-  max-width: 80%;
-  width: 100vw;
+  max-width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 10px;
 }

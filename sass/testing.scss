@@ -19,22 +19,24 @@ h1 {
     text-shadow: 2px 2px #000;
   }
 }
-
+svg.bulb {
+  transform: scaleY(-1);
+}
 .cls-1,
 .outline {
   width: 100vw;
   height: 100vh;
   stroke: white;
   fill: transparent;
-  z-index: 99;
+  z-index: 1;
 }
 .bulb {
-  width: 600px;
+  width: 100vw;
   height: 100vh;
   text-align: center;
   padding: 10px;
   margin: 15px;
-  z-index: 99;
+  z-index: 1;
   position: absolute;
 }
 .logo {
@@ -110,8 +112,6 @@ svg#circuit {
   top: 0;
   display: flex;
   justify-content: center;
-  margin-top: 20%;
-  margin-left: 50%;
   transform: translate(-50%, -50%);
   z-index: 99;
   opacity: 0.7;
