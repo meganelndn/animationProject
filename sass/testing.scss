@@ -12,13 +12,16 @@ body {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+
 h1 {
   color: blueviolet;
+
   &:hover {
     color: blue;
     text-shadow: 2px 2px #000;
   }
 }
+
 .cls-1,
 .outline {
   width: 100vw;
@@ -26,6 +29,7 @@ h1 {
   stroke: white;
   fill: transparent;
 }
+
 .bulb {
   width: 600px;
   height: 100vh;
@@ -35,6 +39,7 @@ h1 {
   z-index: 99;
   position: absolute;
 }
+
 .logo {
   text-align: center;
   width: 20%;
@@ -54,44 +59,55 @@ h1 {
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
     0 0 0.1em #ff4444, 0 10px 3px #000;
 }
+
 .logo b span {
   animation: blink linear infinite 2s;
 }
+
 .logo b span:nth-of-type(2) {
   animation: blink linear infinite 3s;
 }
+
 @keyframes blink {
   78% {
     color: inherit;
     text-shadow: inherit;
   }
+
   79% {
     color: #333;
   }
+
   80% {
     text-shadow: none;
   }
+
   81% {
     color: inherit;
     text-shadow: inherit;
   }
+
   82% {
     color: #333;
     text-shadow: none;
   }
+
   83% {
     color: inherit;
     text-shadow: inherit;
   }
+
   92% {
     color: #333;
     text-shadow: none;
   }
+
   92.5% {
     color: inherit;
     text-shadow: inherit;
   }
 }
+
 /* -----------testing*/
 #circuits {
   position: relative;
@@ -100,6 +116,7 @@ h1 {
   padding: 0;
   padding-bottom: 100%;
 }
+
 svg#circuit {
   position: absolute;
   height: 100%;
@@ -127,8 +144,8 @@ svg#circuit {
 }
 
 @keyframes draw {
-  0% {
-  }
+  0% {}
+
   100% {
     stroke-dashoffset: 0;
     stroke-opacity: 1;
