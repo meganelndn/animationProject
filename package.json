@@ -5,20 +5,18 @@
   "main": "script.js",
   "scripts": {
     "start": "parcel *.html --open",
-    "build": "parcel build *.html --public-url ./",
-    "timeline": "parcel timeline.html --open",
-    "bulb": "parcel bulb.html --open"
+    "build": "parcel build *.html --public-url ./"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/meganelndn/parcel-test.git"
+    "url": "git+https://github.com/meganelndn/animationProject.git"
   },
   "author": "Mégane",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/meganelndn/parcel-test/issues"
+    "url": "https://github.com/meganelndn/animationProject/issues"
   },
-  "homepage": "https://github.com/meganelndn/parcel-test#readme",
+  "homepage": "https://github.com/meganelndn/animationProject#readme",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-transform-runtime": "^7.9.0",
