@@ -28,12 +28,9 @@ async function init() {
   let infoSvg = await responseBox.text();
   document.querySelector("#infoBoxSvg").innerHTML = infoSvg;
 
-  startManipulatingSvg();
 }
 
-function startManipulatingSvg() {
-  console.log("hi");
-}
+
 
 /*--------------- bulb animation ---------------*/
 gsap.set("#bulb", {
