@@ -58,6 +58,8 @@ function startManipulatingData() {
     document.querySelector("#infoBoxSvg #image").setAttribute("href", `imgs/bolt.svg`);
     //hide line at the beggining:
     document.querySelector("#timeline .cls-2").setAttribute("display", "none");
+    //hide the box frame:
+    document.querySelector("#infobox .cls-1").setAttribute("display", "none");
     //show all bullets
     console.log(document.querySelector("#bullets"));
     //show clicked bullet

@@ -256,8 +256,8 @@ input[type="submit"] {
   text-align: center;
  // align-self: flex-end;
  //keeps the button down:
-  bottom: -150px;
-  right: 100px;
+  //bottom: -150px;
+  right: 250px;
 }
 
 /* Button: Neon */
@@ -266,6 +266,7 @@ button.neon,
 input[type="button"].neon,
 input[type="reset"].neon,
 input[type="submit"].neon {
+  top: 100px;
   border-radius: 0.4em;
   font-weight: 400;
   padding: 0.44em;
