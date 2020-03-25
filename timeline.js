@@ -35,7 +35,7 @@ function startManipulatingData() {
   document.querySelector("#infoBoxSvg #title").textContent = "Facts about eletricity";
   document.querySelector("#infoBoxSvg #inventor").textContent = "";
   document.querySelector("#infoBoxSvg #date").textContent = "";
-  document.querySelector("#infoBoxSvg #text").innerHTML = "Click on points from the timeline to \n view popular facts about eletricity";
+  document.querySelector("#infoBoxSvg #text").innerHTML = "<tspan>Click on points from the timeline to </tspan><tspan x='0' y='30'> view popular facts about electricity</tspan>";
   //show all bullets
   console.log(document.querySelector("#bullets"));
   //show clicked bullet
