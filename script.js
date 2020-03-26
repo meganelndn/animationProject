@@ -174,7 +174,7 @@ function selectCircle(selectedBullet) {
 /*--------------- bulb gsap animation ------------*/
 gsap.set("#bulb", {
     scale: 0.7,
-    y: -140
+    y: -185
 });
 const timeline = gsap.timeline();
 timeline.to("#bulb", {
@@ -190,4 +190,3 @@ timeline.to("#bulb", {
         rotation: 180,
         ease: "none"
     });
-
