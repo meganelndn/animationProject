@@ -189,4 +189,13 @@ timeline.to("#bulb", {
     .to("#bulb", {
         rotation: 180,
         ease: "none"
+    })
+    .to("#timeline", {
+        strokeDasharray: 300,
+        strokeDashoffset: 100,
+        duration: 2,
+        delay: 3
+    })
+    .to("#timeline", {
+        strokeDashoffset: 0,
     });
