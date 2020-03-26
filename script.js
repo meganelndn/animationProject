@@ -165,7 +165,7 @@ function selectCircle(selectedBullet) {
     //find infobox to move it:
     console.log(document.querySelector("#infobox rect"))
     const moveInfoBox = document.querySelector("#mainSvg use");
-    moveInfoBox.setAttribute("x", x2 - 160);
+    moveInfoBox.setAttribute("x", x2 - 260);
     moveInfoBox.setAttribute("y", "150");
 
 
