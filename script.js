@@ -169,4 +169,4 @@ timeline.to("#bulb", {
     .to("#bulb", {
         rotation: 180,
         ease: "none"
-    });
+    })
