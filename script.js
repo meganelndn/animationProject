@@ -51,7 +51,7 @@ function startManipulatingData() {
     document.querySelector("#mainSvg svg").setAttribute("height", "50%");
     //change what appears First:
     console.log(document.querySelector("#infoBoxSvg #inventor"))
-    document.querySelector("#infoBoxSvg #title").textContent = "Facts about electricity";
+    document.querySelector("#infoBoxSvg #title").textContent = "Global impacts of electricity";
     document.querySelector("#infoBoxSvg #inventor").textContent = "";
     document.querySelector("#infoBoxSvg #date").textContent = "";
     //hide all text:
@@ -65,6 +65,7 @@ function startManipulatingData() {
     document.querySelector("#infoBoxSvg #image").setAttribute("href", `imgs/bolt.svg`);
     //hide line at the beggining:
     document.querySelector("#timeline .cls-2").setAttribute("display", "none");
+    document.querySelector("#timeline #vertical_line").setAttribute("display", "none");
     //hide the box frame:
     document.querySelector("#infobox .cls-1").setAttribute("display", "none");
     //show all bullets

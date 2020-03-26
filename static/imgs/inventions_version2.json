@@ -3,10 +3,10 @@
     "id": "point1",
     "year": "1876",
     "inventor": "Alexander Graham Bell",
-    "text6": "He found a way to transmit human voice over wires:",
-    "text5": "a simple receiver that could turn electricity into",
-    "text4": "sound. His interest in sound technology was deep-rooted",
-    "text3": "and personal, as both his wife and mother were deaf.",
+    "text6": " He found a way  to transmit human voice over wires:",
+    "text5": "a receiver that could turn electricity into  sound. ",
+    "text4": "His interest in sound technology was deep-rooted and",
+    "text3": "personal, as both  his wife and  mother  were  deaf.",
     "image": "telephone_white.svg"
   },
   {
@@ -16,8 +16,8 @@
     "inventor": "Thomas Edison",
     "text6": "First incandescent electric light worked by passing",
     "text5": "electricity through a thin platinum filament in the",
-    "text4": "glass vacuum bulb, which delayed the filament from",
-    "text3": "melting. The lamp only burned for a few hours.",
+    "text4": "glass vacuum bulb, which delayed the  filament from",
+    "text3": "melting. The lamp  only  burned  for a  few  hours.",
     "image": "white_light.svg"
   },
   {
@@ -25,12 +25,12 @@
     "id": "point3",
     "year": "1884",
     "inventor": "Nikola Tesla",
-    "text6": "Nikola Tesla was an engineer and scientist known for",
-    "text5": "designing the alternating-current (AC) electric system,",
-    "text4": "which is the predominant electrical system used across",
-    "text3": "the world today. He also created the 'Tesla coil,' which",
-    "text2": "is still used in radio technology. Tesla came to the United",
-    "text1": "States in 1884 and briefly worked with Thomas Edison before the two parted ways.",
+    "text6": "Nikola Tesla was an engineer and scientist known for designing",
+    "text5": "the  alternating-current  (AC) electric  system, which is  the",
+    "text4": "predominant electrical  system used across the world today. He",
+    "text3": "also created the  'Tesla coil,' which is  still used  in radio",
+    "text2": "technology. Tesla came to the United States in 1884 and briefly",
+    "text1": "worked with Thomas Edison before the two parted ways.",
     "image": "tesla.svg"
   },
   {
@@ -39,9 +39,10 @@
     "year": "1888",
     "inventor": "Heinrich Hertz",
     "text6": "The german physicist was the first to conclusively",
-    "text5": "prove the existence of the electromagnetic waves predicted",
-    "text4": "by James Clerk Maxwell's equations of electromagnetism,",
-    "text3": "including what would come to be called radio waves.",
+    "text5": "prove the  existence of the  electromagnetic waves",
+    "text4": "predicted by  James  Clerk  Maxwell's equations of",
+    "text3": "electromagnetism, including what would  come to be",
+    "text2": "called radio waves.",
     "image": "radio.svg"
   },
   {
@@ -58,7 +59,8 @@
     "id": "point6",
     "year": "1924",
     "inventor": "Kenjiro Takayanagi",
-    "text6": "The japanese engineer began research program on electronic television.",
+    "text6": "The japanese engineer began research program",
+    "text5": "on electronic television.",
     "image": "tv_white.svg"
   },
   {
@@ -74,7 +76,7 @@
     "id": "point8",
     "year": "1954",
     "inventor": "Narinder Singh Kapany",
-    "text6": "The indian physicist invented the first actual fiber optical",
+    "text6": "The indian physicist invented  the first  actual fiber  optical",
     "text5": "cable based on John Tyndall's experiments three decades earlier.",
     "image": "optical-fiber.svg"
   },
@@ -83,7 +85,8 @@
     "id": "point9",
     "year": "1960",
     "inventor": "Theodore Harold Maiman",
-    "text6": "The american engineer developed and operated the first functioning laser.",
+    "text6": "The american engineer developed and operated",
+    "text7": "the first functioning laser.",
     "image": "laser.svg"
   },
   {
@@ -92,7 +95,7 @@
     "year": "1988",
     "inventor": "Charles F. Brush",
     "text6": "The first electricity-generating wind turbine had a diameter",
-    "text5": "of 17 meters, had 144 rotor blades made of cedar wood, and ",
+    "text5": "of 17 meters, had 144 rotor blades made of  cedar wood, and ",
     "text4": "it generated about 12kW of power.",
     "image": "turbine.svg"
   }
