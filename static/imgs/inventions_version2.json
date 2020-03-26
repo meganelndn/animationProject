@@ -3,7 +3,10 @@
     "id": "point1",
     "year": "1876",
     "inventor": "Alexander Graham Bell",
-    "text": "He found a way to transmit human voice over wires: a simple receiver that could turn electricity into sound. His interest in sound technology was deep-rooted and personal, as both his wife and mother were deaf.",
+    "text6": "He found a way to transmit human voice over wires:",
+    "text5": "a simple receiver that could turn electricity into",
+    "text4": "sound. His interest in sound technology was deep-rooted",
+    "text3": "and personal, as both his wife and mother were deaf.",
     "image": "telephone_white.svg"
   },
   {
@@ -11,7 +14,10 @@
     "id": "point2",
     "year": "1878",
     "inventor": "Thomas Edison",
-    "text": "First incandescent electric light worked by passing electricity through a thin platinum filament in the glass vacuum bulb, which delayed the filament from melting. The lamp only burned for a few hours.",
+    "text6": "First incandescent electric light worked by passing",
+    "text5": "electricity through a thin platinum filament in the",
+    "text4": "glass vacuum bulb, which delayed the filament from",
+    "text3": "melting. The lamp only burned for a few hours.",
     "image": "white_light.svg"
   },
   {
@@ -19,7 +25,12 @@
     "id": "point3",
     "year": "1884",
     "inventor": "Nikola Tesla",
-    "text": "Nikola Tesla was an engineer and scientist known for designing the alternating-current (AC) electric system, which is the predominant electrical system used across the world today. He also created the 'Tesla coil,' which is still used in radio technology. Tesla came to the United States in 1884 and briefly worked with Thomas Edison before the two parted ways.",
+    "text6": "Nikola Tesla was an engineer and scientist known for",
+    "text5": "designing the alternating-current (AC) electric system,",
+    "text4": "which is the predominant electrical system used across",
+    "text3": "the world today. He also created the 'Tesla coil,' which",
+    "text2": "is still used in radio technology. Tesla came to the United",
+    "text1": "States in 1884 and briefly worked with Thomas Edison before the two parted ways.",
     "image": "tesla.jpg"
   },
   {
@@ -27,7 +38,10 @@
     "id": "point4",
     "year": "1888",
     "inventor": "Heinrich Hertz",
-    "text": "The german physicist was the first to conclusively prove the existence of the electromagnetic waves predicted by James Clerk Maxwell's equations of electromagnetism, including what would come to be called radio waves.",
+    "text6": "The german physicist was the first to conclusively",
+    "text5": "prove the existence of the electromagnetic waves predicted",
+    "text4": "by James Clerk Maxwell's equations of electromagnetism,",
+    "text3": "including what would come to be called radio waves.",
     "image": "radio.svg"
   },
   {
@@ -35,7 +49,7 @@
     "id": "point5",
     "year": "1908",
     "inventor": "Alan Archibald Campbell-Swinton",
-    "text": "The scottish engineer laid the principles of Television.",
+    "text6": "The scottish engineer laid the principles of Television.",
     "image": "tv-principles.jpg"
   },
   {
@@ -43,15 +57,15 @@
     "id": "point6",
     "year": "1924",
     "inventor": "Kenjiro Takayanagi",
-    "text": "The japanese engineer began research program on electronic television.",
+    "text6": "The japanese engineer began research program on electronic television.",
     "image": "tv_white.svg"
   },
   {
-    "title": "First experimental Television broadcast",
+    "title": "First broadcast",
     "id": "point7",
     "year": "1928",
     "inventor": "",
-    "text": "First experimental Television broadcast in the US.",
+    "text6": "First experimental Television broadcast in the US.",
     "image": "tv-broadcast.png"
   },
   {
@@ -59,7 +73,8 @@
     "id": "point8",
     "year": "1954",
     "inventor": "Narinder Singh Kapany",
-    "text": "The indian physicist invented the first actual fiber optical cable based on John Tyndall's experiments three decades earlier.",
+    "text6": "The indian physicist invented the first actual fiber optical",
+    "text5": "cable based on John Tyndall's experiments three decades earlier.",
     "image": "optical-fiber.png"
   },
   {
@@ -67,15 +82,17 @@
     "id": "point9",
     "year": "1960",
     "inventor": "Theodore Harold Maiman",
-    "text": "The american engineer developed and operated the first functioning laser.",
+    "text6": "The american engineer developed and operated the first functioning laser.",
     "image": "laser.svg"
   },
   {
-    "title": "Electrical Wind Energy",
+    "title": "Wind Energy",
     "id": "point10",
     "year": "1988",
     "inventor": "Charles F. Brush",
-    "text": "The first electricity-generating wind turbine had a diameter of 17 meters, had 144 rotor blades made of cedar wood, and it generated about 12kW of power.",
+    "text6": "The first electricity-generating wind turbine had a diameter",
+    "text5": "of 17 meters, had 144 rotor blades made of cedar wood, and ",
+    "text4": "it generated about 12kW of power.",
     "image": "turbine.svg"
   }
 ]
