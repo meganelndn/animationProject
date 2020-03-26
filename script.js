@@ -149,7 +149,7 @@ function selectCircle(selectedBullet) {
 
 }
 
-/*--------------- bulb animation ---------------*/
+/*--------------- bulb gsap animation ------------*/
 gsap.set("#bulb", {
     scale: 0.7,
     y: -140
