@@ -35,11 +35,12 @@ svg.bulb {
   transform: scaleY(-1);
 }
 
-.slideOne{
-    display: flex;
-    flex-direction: row;
-    margin: 0px;
+.slideOne {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
 }
+
 .bulb-stroke,
 .outline {
   width: 100vw;
@@ -99,11 +100,11 @@ svg.bulb {
 }
 
 //the text inside the infobox:
-#infobox #text{
+#infobox #text {
   font-size: 16px;
 }
 
-#text .cls-9{
+#text .cls-9 {
   font-size: 30px;
 }
 
@@ -254,8 +255,8 @@ input[type="submit"] {
   align-content: center;
   justify-content: center;
   text-align: center;
- // align-self: flex-end;
- //keeps the button down:
+  // align-self: flex-end;
+  //keeps the button down:
   //bottom: -150px;
   right: 250px;
 }
@@ -320,7 +321,7 @@ nav ul {
 nav ul li {
   display: flex;
   list-style: none;
-  }
+}
 
 nav ul li a {
   text-decoration: none;

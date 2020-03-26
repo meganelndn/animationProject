@@ -31,7 +31,7 @@
     "text3": "the world today. He also created the 'Tesla coil,' which",
     "text2": "is still used in radio technology. Tesla came to the United",
     "text1": "States in 1884 and briefly worked with Thomas Edison before the two parted ways.",
-    "image": "tesla.jpg"
+    "image": "tesla.svg"
   },
   {
     "title": "Radio waves",
@@ -50,7 +50,8 @@
     "year": "1908",
     "inventor": "Alan Archibald Campbell-Swinton",
     "text6": "The scottish engineer laid the principles of Television.",
-    "image": "tv-principles.jpg"
+    "image": "alan-archibald.svg"
+
   },
   {
     "title": "Electronic television",
@@ -66,7 +67,7 @@
     "year": "1928",
     "inventor": "",
     "text6": "First experimental Television broadcast in the US.",
-    "image": "tv-broadcast.png"
+    "image": "tv-broadcast.svg"
   },
   {
     "title": "Optical Fiber",
@@ -75,7 +76,7 @@
     "inventor": "Narinder Singh Kapany",
     "text6": "The indian physicist invented the first actual fiber optical",
     "text5": "cable based on John Tyndall's experiments three decades earlier.",
-    "image": "optical-fiber.png"
+    "image": "optical-fiber.svg"
   },
   {
     "title": "Laser",

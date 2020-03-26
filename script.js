@@ -189,12 +189,4 @@ timeline.to("#bulb", {
         rotation: 180,
         ease: "none"
     });
-/*     .to("#vertical_line", {
-        strokeDasharray: 300,
-        strokeDashoffset: 300,
-        duration: 2,
-        delay: 3
-    })
-    .to("#vertical_line", {
-        strokeDashoffset: 0,
-    }); */
+
