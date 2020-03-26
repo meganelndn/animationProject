@@ -1,6 +1,5 @@
 @use "partials/vars";
 @use "partials/mixins";
-
 @font-face {
   font-family: "thundercoverregular";
   src: url("Fonts/thundercover-g43p-webfont.woff2") format("woff2"),
@@ -15,9 +14,8 @@
   font-weight: normal;
   font-style: normal;
 }
-
 $bg-color: #000;
-$color-button: hsl(245, 80%, 50%);
+$color-button: hsl(0, 73%, 59%);
 
 body {
   max-width: 100%;
@@ -81,12 +79,13 @@ svg.bulb {
 #infoBoxSvg {
   //width: 100%;
   //height: 100%;
-  //position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 9;
   padding: 50px;
   fill: white;
+  margin-top: 70px;
 }
 
 #infoBoxSvg {
@@ -120,14 +119,14 @@ svg.bulb {
 .logo {
   text-align: center;
   width: 20%;
-  //height: 250px;
   margin: auto;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 40%;
   right: 0;
   bottom: 90%;
   user-select: none;
+  margin-top: 20px;
 }
 
 .logo b {
@@ -243,7 +242,7 @@ input[type="submit"] {
   background-color: $color-button;
   color: hsl(0, 0%, 100%);
   line-height: 1;
-  padding: 0.66em;
+  padding: 0.67em;
   text-decoration: none;
   transition: all 0.3s ease;
   display: inline-flex;
@@ -253,7 +252,7 @@ input[type="submit"] {
   align-content: center;
   justify-content: center;
   text-align: center;
-  margin-bottom: 100px;
+  text-transform: uppercase;
   //keeps the button down:
   //bottom: -150px;
   right: 250px;
@@ -269,12 +268,12 @@ input[type="submit"].neon {
   border-radius: 0.4em;
   font-weight: 400;
   padding: 0.44em;
-  font-family: "thundercoverregular";
+  /*font-family: "lovely_homeregular";*/
   letter-spacing: 0.04em;
   background: transparent !important;
   border: 0.1em solid lighten($color-button, 51%);
   color: lighten($color-button, 51%);
-  font-size: 20px;
+  font-size: 30px;
   text-shadow: hsl(0, 100%, 100%) 0px 0px 0.15em,
     hsl(0, 100%, 100%) 0px 0px 0.3em, hsl(0, 100%, 100%) 0px 0px 0.45em,
     $color-button 0px 0px 0.3em, $color-button 0px 0px 0.52em,
@@ -301,7 +300,10 @@ input[type="submit"].neon:hover {
     $color-button 0px 0px 1.2em, $color-button 0px 0px 1.5em,
     inset $color-button 0 0 1.2em;
 }
-
+a {
+  text-decoration: none;
+  color: #fff;
+}
 #bulbWrapper {
   top: 0;
   left: 0;
@@ -310,8 +312,7 @@ input[type="submit"].neon:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  //padding: 40px;
-  //margin-top: 100px;
+  padding: 40px;
   align-self: center;
 }
 
