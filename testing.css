@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  width: 400vw;
+  width: 340vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }

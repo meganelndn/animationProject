@@ -47,7 +47,7 @@ async function init() {
 /* -------------------------- start ------------------------------ */
 function startManipulatingData() {
     //change original size
-    document.querySelector("#mainSvg svg").setAttribute("viewBox", "0 0 3500 700");
+    document.querySelector("#mainSvg svg").setAttribute("viewBox", "0 0 3600 700");
     document.querySelector("#mainSvg svg").setAttribute("height", "50%");
     //change what appears First:
     console.log(document.querySelector("#infoBoxSvg #inventor"))
