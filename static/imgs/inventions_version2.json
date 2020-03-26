@@ -12,7 +12,7 @@
     "year": "1878",
     "inventor": "Thomas Edison",
     "text": "First incandescent electric light worked by passing electricity through a thin platinum filament in the glass vacuum bulb, which delayed the filament from melting. The lamp only burned for a few hours.",
-    "image": "white_light.svg"
+    "image": "bulbBlack.svg"
   },
   {
     "title": "AC Electric System",
@@ -20,7 +20,7 @@
     "year": "1884",
     "inventor": "Nikola Tesla",
     "text": "Nikola Tesla was an engineer and scientist known for designing the alternating-current (AC) electric system, which is the predominant electrical system used across the world today. He also created the 'Tesla coil,' which is still used in radio technology. Tesla came to the United States in 1884 and briefly worked with Thomas Edison before the two parted ways.",
-    "image": "tesla.jpg"
+    "image": "tesla.svg"
   },
   {
     "title": "Radio waves",
@@ -36,7 +36,7 @@
     "year": "1908",
     "inventor": "Alan Archibald Campbell-Swinton",
     "text": "The scottish engineer laid the principles of Television.",
-    "image": "tv-principles.jpg"
+    "image": "alan-archibald.svg"
   },
   {
     "title": "Electronic television",
@@ -52,7 +52,7 @@
     "year": "1928",
     "inventor": "",
     "text": "First experimental Television broadcast in the US.",
-    "image": "tv-broadcast.png"
+    "image": "tv-broadcast.svg"
   },
   {
     "title": "Optical Fiber",
@@ -60,7 +60,7 @@
     "year": "1954",
     "inventor": "Narinder Singh Kapany",
     "text": "The indian physicist invented the first actual fiber optical cable based on John Tyndall's experiments three decades earlier.",
-    "image": "optical-fiber.png"
+    "image": "optical-fiber.svg"
   },
   {
     "title": "Laser",
