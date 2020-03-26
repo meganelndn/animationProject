@@ -26,8 +26,8 @@ gallery(data, document.body); */
 /*-------------- init function -----------------*/
 async function init() {
     let response = await fetch("imgs/bulbWhite.svg");
-    let responseTl = await fetch("imgs/finalmente_timeline.svg");
-    let responseBox = await fetch("imgs/finalmente_box.svg");
+    let responseTl = await fetch("imgs/deusTimeline.svg");
+    let responseBox = await fetch("imgs/deusBox.svg");
 
     let svgData = await response.text();
     document.querySelector("#bulb").innerHTML = svgData;
@@ -47,14 +47,21 @@ async function init() {
 /* -------------------------- start ------------------------------ */
 function startManipulatingData() {
     //change original size
-    document.querySelector("#mainSvg svg").setAttribute("viewBox", "0 0 2000 500");
+    document.querySelector("#mainSvg svg").setAttribute("viewBox", "0 0 3500 700");
     document.querySelector("#mainSvg svg").setAttribute("height", "50%");
     //change what appears First:
     console.log(document.querySelector("#infoBoxSvg #inventor"))
     document.querySelector("#infoBoxSvg #title").textContent = "Facts about electricity";
     document.querySelector("#infoBoxSvg #inventor").textContent = "";
     document.querySelector("#infoBoxSvg #date").textContent = "";
-    document.querySelector("#infoBoxSvg #text").innerHTML = "<tspan>Click on points from the timeline to </tspan><tspan x='0' y='30'> view popular facts about electricity</tspan>";
+    //hide all text:
+    document.querySelector("#infoBoxSvg #text6").textContent = "";
+    document.querySelector("#infoBoxSvg #text5").textContent = "";
+    document.querySelector("#infoBoxSvg #text4").textContent = "";
+    document.querySelector("#infoBoxSvg #text3").textContent = "";
+    document.querySelector("#infoBoxSvg #text2").textContent = "";
+    document.querySelector("#infoBoxSvg #text1").textContent = "";
+    //document.querySelector("#infoBoxSvg #text").innerHTML = "<tspan>Click on points from the timeline to </tspan><tspan x='0' y='30'> view popular facts about electricity</tspan>";
     document.querySelector("#infoBoxSvg #image").setAttribute("href", `imgs/bolt.svg`);
     //hide line at the beggining:
     document.querySelector("#timeline .cls-2").setAttribute("display", "none");
@@ -117,8 +124,22 @@ function selectCircle(selectedBullet) {
     console.log(infobox);
     let inventor = document.querySelector("#inventor");
     inventor.textContent = invention.inventor;
-    let description = document.querySelector("#text");
-    description.textContent = invention.text;
+
+    //text:
+    let text6 = document.querySelector("#text6");
+    text6.textContent = invention.text6;
+    let text5 = document.querySelector("#text5");
+    text5.textContent = invention.text5;
+    let text4 = document.querySelector("#text4");
+    text4.textContent = invention.text4;
+    let text3 = document.querySelector("#text3");
+    text3.textContent = invention.text3;
+    let text2 = document.querySelector("#text2");
+    text2.textContent = invention.text2;
+    let text1 = document.querySelector("#text1");
+    text1.textContent = invention.text1;
+
+
     let title = document.querySelector("#title");
     title.textContent = invention.title;
     let date = document.querySelector("#date");
@@ -143,8 +164,8 @@ function selectCircle(selectedBullet) {
     //find infobox to move it:
     console.log(document.querySelector("#infobox rect"))
     const moveInfoBox = document.querySelector("#mainSvg use");
-    moveInfoBox.setAttribute("x", x2 - 120);
-    moveInfoBox.setAttribute("y", "80");
+    moveInfoBox.setAttribute("x", x2 - 160);
+    moveInfoBox.setAttribute("y", "150");
 
 
 }
@@ -154,9 +175,7 @@ gsap.set("#bulb", {
     scale: 0.7,
     y: -140
 });
-
 const timeline = gsap.timeline();
-
 timeline.to("#bulb", {
         strokeDasharray: 200,
         strokeDashoffset: 150,
@@ -170,3 +189,4 @@ timeline.to("#bulb", {
         rotation: 180,
         ease: "none"
     });
+
