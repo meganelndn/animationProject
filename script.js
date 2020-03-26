@@ -171,8 +171,16 @@ timeline.to("#bulb", {
         rotation: 180
     })
     .to("#bulb", {
-        y: -380,
-        x: -975,
+        y: -470,
+        x: -440,
         scale: .1
+    })
+    .to("#timeline", {
+        strokeDasharray: 300,
+        strokeDashoffset: 300,
+        duration: 2,
+        delay: 3
+    })
+    .to("#timeline", {
+        strokeDashoffset: 0,
     });
-    
