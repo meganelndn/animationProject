@@ -85,7 +85,7 @@ svg.bulb {
   z-index: 9;
   padding: 50px;
   fill: white;
-  margin-top: 70px;
+  margin-top: 0px;
 }
 
 #infoBoxSvg {
@@ -195,15 +195,15 @@ svg.bulb {
 }
 
 svg#circuit {
-  //position: absolute;
-  //width: 80%;
-  left: 0;
-  top: 0;
-  //display: flex;
-  //justify-content: center;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50%;
   z-index: 99;
   opacity: 1;
+  transform: translate(-40%, -40%);
+  background-color: #000;
 }
 
 .path {
@@ -220,7 +220,6 @@ svg#circuit {
 @keyframes draw {
   0% {
   }
-
   100% {
     stroke-dashoffset: 0;
     stroke-opacity: 1;
