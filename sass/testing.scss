@@ -6,7 +6,7 @@ $font1: "Lovely Home";
 $font2: "Avenir";
 $font3: "Thundercover";
 $font4: "Sen";
-$color-button: #ff4444;
+$color-button: #1D57A5;
 
 body {
   max-width: 100%;
@@ -142,8 +142,8 @@ svg.bulb {
 .logo b {
   font: 15vh $font3;
   color: #fee;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
-    0 0 0.1em #ff4444, 0 10px 3px #000;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #7BA4DB, 0 0 0.5em #7BA4DB,
+    0 0 0.1em #7BA4DB, 0 10px 3px #000;
 }
 
 .logo b span {
@@ -276,13 +276,13 @@ input[type="submit"].neon {
   border-radius: 0.4em;
   align-self: center;
   font-weight: 400;
-  padding: 0.44em;
+  padding: 0.1em 2em;
   font-family: $font1, sans-serif;
   letter-spacing: 0.04em;
   background: transparent !important;
   border: 0.1em solid lighten($color-button, 51%);
   color: lighten($color-button, 51%);
-  font-size: 20px;
+  font-size: 15px;
   right: 150px;
   text-decoration: none;
   text-shadow: hsl(0, 100%, 100%) 0px 0px 0.15em,
