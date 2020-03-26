@@ -18,7 +18,7 @@
     "text5": "electricity through a thin platinum filament in the",
     "text4": "glass vacuum bulb, which delayed the  filament from",
     "text3": "melting. The lamp  only  burned  for a  few  hours.",
-    "image": "white_light.svg"
+    "image": "bulbBlack.svg"
   },
   {
     "title": "AC Electric System",
@@ -46,7 +46,7 @@
     "image": "radio.svg"
   },
   {
-    "title": "Television principles",
+    "title": "TV principles",
     "id": "point5",
     "year": "1908",
     "inventor": "Alan Archibald Campbell-Swinton",
@@ -55,7 +55,7 @@
 
   },
   {
-    "title": "Electronic television",
+    "title": "Electronic TV",
     "id": "point6",
     "year": "1924",
     "inventor": "Kenjiro Takayanagi",
