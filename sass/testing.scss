@@ -1,12 +1,23 @@
 @use "partials/vars";
 @use "partials/mixins";
 
+@font-face {
+  font-family: "thundercoverregular";
+  src: url("Fonts/thundercover-g43p-webfont.woff2") format("woff2"),
+    url("Fonts/thundercover-g43p-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "lovely_homeregular";
+  src: url("Fonts/lovely-webfont.woff2") format("woff2"),
+    url("Fonts/lovely-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 $bg-color: #000;
-$font1: "Lovely Home";
-$font2: "Avenir";
-$font3: "Thundercover";
-$font4: "Sen";
-$color-button: hsl(308, 100%, 50%);
+$color-button: hsl(245, 80%, 50%);
 
 body {
   max-width: 100%;
@@ -14,7 +25,7 @@ body {
   margin: 0;
   padding: 0;
   background: $bg-color;
-  font-family: $font1;
+  font-family: "lovely_homeregular";
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -35,10 +46,10 @@ svg.bulb {
   transform: scaleY(-1);
 }
 
-.slideOne{
-    display: flex;
-    flex-direction: row;
-    margin: 0px;
+.slideOne {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
 }
 .bulb-stroke,
 .outline {
@@ -65,7 +76,6 @@ svg.bulb {
   display: none;
   background-color: white;
 }
-
 
 #mainSvg,
 #infoBoxSvg {
@@ -99,25 +109,12 @@ svg.bulb {
 }
 
 //the text inside the infobox:
-#infobox #text{
+#infobox #text {
   font-size: 16px;
 }
 
-#text .cls-9{
+#text .cls-9 {
   font-size: 30px;
-}
-
-.text {
-  top: 0;
-  left: 0;
-  max-width: 80%;
-  width: 100vw;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  color: #fff;
 }
 
 .logo {
@@ -134,7 +131,8 @@ svg.bulb {
 }
 
 .logo b {
-  font: 16vh $font3;
+  font-family: "thundercoverregular";
+  font-size: 16vh;
   color: #fee;
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
     0 0 0.1em #ff4444, 0 10px 3px #000;
@@ -206,7 +204,7 @@ svg#circuit {
   //justify-content: center;
   transform: translate(-50%, -50%);
   z-index: 99;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .path {
@@ -221,7 +219,8 @@ svg#circuit {
 }
 
 @keyframes draw {
-  0% {}
+  0% {
+  }
 
   100% {
     stroke-dashoffset: 0;
@@ -254,8 +253,8 @@ input[type="submit"] {
   align-content: center;
   justify-content: center;
   text-align: center;
- // align-self: flex-end;
- //keeps the button down:
+  margin-bottom: 100px;
+  //keeps the button down:
   //bottom: -150px;
   right: 250px;
 }
@@ -270,7 +269,7 @@ input[type="submit"].neon {
   border-radius: 0.4em;
   font-weight: 400;
   padding: 0.44em;
-  font-family: $font1, sans-serif;
+  font-family: "thundercoverregular";
   letter-spacing: 0.04em;
   background: transparent !important;
   border: 0.1em solid lighten($color-button, 51%);
@@ -301,29 +300,6 @@ input[type="submit"].neon:hover {
     $color-button 0px 0px 0.6em, $color-button 0px 0px 1.04em,
     $color-button 0px 0px 1.2em, $color-button 0px 0px 1.5em,
     inset $color-button 0 0 1.2em;
-}
-
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  font-size: 1em;
-  position: sticky;
-}
-
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-nav ul li {
-  display: flex;
-  list-style: none;
-  }
-
-nav ul li a {
-  text-decoration: none;
 }
 
 #bulbWrapper {

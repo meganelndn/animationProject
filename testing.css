@@ -13,11 +13,11 @@ body {
   height: 100vh;
 }
 .wrapper {
-  background: url(imgs/Bricks.jpg);
+  background: url(imgs/Bricks.jpg) no-repeat;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  width: 400vw;
+  width: 270vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
