@@ -97,7 +97,12 @@ svg.bulb {
 
 #timeline .cls-2 {
   stroke: #fff;
+  animation: ease-in 1s linear forwards;
 }
+
+/* @keyframes ease-in {
+
+} */
 
 //the text inside the infobox:
 #infobox #text {
