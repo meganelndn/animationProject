@@ -171,7 +171,7 @@ function selectCircle(selectedBullet) {
 
 }
 
-/*--------------- bulb gsap animation ------------*/
+/*--------------- GSAP Animations ------------*/
 gsap.set("#bulb", {
     scale: 0.7,
     y: -185
@@ -193,8 +193,9 @@ timeline.to("#bulb", {
     .to("#timeline", {
         strokeDasharray: 300,
         strokeDashoffset: 100,
-        duration: 2,
-        delay: 3
+        duration: 5,
+        delay: 3,
+        repeat: 25
     })
     .to("#timeline", {
         strokeDashoffset: 0,
