@@ -6,7 +6,7 @@ $font1: "Lovely Home";
 $font2: "Avenir";
 $font3: "Thundercover";
 $font4: "Sen";
-$color-button: hsl(308, 100%, 50%);
+$color-button: #ff4444;
 
 body {
   max-width: 100%;
@@ -127,7 +127,7 @@ svg.bulb {
   //height: 250px;
   margin: auto;
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
   right: 0;
   bottom: 90%;
@@ -135,7 +135,7 @@ svg.bulb {
 }
 
 .logo b {
-  font: 16vh $font3;
+  font: 15vh $font3;
   color: #fee;
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
     0 0 0.1em #ff4444, 0 10px 3px #000;
@@ -205,9 +205,9 @@ svg#circuit {
   top: 0;
   //display: flex;
   //justify-content: center;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -45%);
   z-index: 99;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .path {
@@ -258,7 +258,7 @@ input[type="submit"] {
   // align-self: flex-end;
   //keeps the button down:
   //bottom: -150px;
-  right: 250px;
+  //right: 250px;
 }
 
 /* Button: Neon */
@@ -269,6 +269,7 @@ input[type="reset"].neon,
 input[type="submit"].neon {
   top: 100px;
   border-radius: 0.4em;
+  align-self: center;
   font-weight: 400;
   padding: 0.44em;
   font-family: $font1, sans-serif;
@@ -277,6 +278,8 @@ input[type="submit"].neon {
   border: 0.1em solid lighten($color-button, 51%);
   color: lighten($color-button, 51%);
   font-size: 20px;
+  right: 150px;
+  text-decoration: none;
   text-shadow: hsl(0, 100%, 100%) 0px 0px 0.15em,
     hsl(0, 100%, 100%) 0px 0px 0.3em, hsl(0, 100%, 100%) 0px 0px 0.45em,
     $color-button 0px 0px 0.3em, $color-button 0px 0px 0.52em,
@@ -332,7 +335,7 @@ nav ul li a {
   left: 0;
   max-width: 100%;
   height: auto;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   //padding: 40px;
