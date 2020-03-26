@@ -83,3 +83,55 @@ body {
   align-items: center;
   padding: 50px;
 }
+
+
+
+/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+
+.wrapper {
+  display: inline-block;
+  width: 210vw;
+
+}  
+
+} */
+ 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+.wrapper {
+  display: inline-block;
+  width: 280vw;
+
+}  
+
+} 
+
+/* Tablet on portrait */
+ @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (orientation : portrait) { 
+.slideOn{
+  display: contents;
+}
+#bulbWrapper{
+  width: 60%;
+}
+}
+
+/* Tablet on portrait */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (orientation : landscape) { 
+.slideOn{
+  display: inline-flex;
+}
+#bulbWrapper{
+  width: auto;
+}
+}
