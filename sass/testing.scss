@@ -6,7 +6,7 @@ $font1: "Lovely Home";
 $font2: "Avenir";
 $font3: "Thundercover";
 $font4: "Sen";
-$color-button: #1D57A5;
+$color-button: #1d57a5;
 
 body {
   max-width: 100%;
@@ -66,7 +66,6 @@ svg.bulb {
   display: none;
   background-color: white;
 }
-
 
 #mainSvg,
 #infoBoxSvg {
@@ -142,8 +141,8 @@ svg.bulb {
 .logo b {
   font: 15vh $font3;
   color: #fee;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #7BA4DB, 0 0 0.5em #7BA4DB,
-    0 0 0.1em #7BA4DB, 0 10px 3px #000;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #7ba4db, 0 0 0.5em #7ba4db,
+    0 0 0.1em #7ba4db, 0 10px 3px #000;
 }
 
 .logo b span {
@@ -227,7 +226,8 @@ svg#circuit {
 }
 
 @keyframes draw {
-  0% {}
+  0% {
+  }
 
   100% {
     stroke-dashoffset: 0;
@@ -343,12 +343,9 @@ nav ul li a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  //padding: 40px;
-  //margin-top: 100px;
   align-self: center;
 }
 
 #bulb {
   margin: 50px;
 }
-
